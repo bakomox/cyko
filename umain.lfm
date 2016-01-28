@@ -92,7 +92,7 @@ object frmMain: TfrmMain
         ClientWidth = 596
         TabOrder = 1
         object lblMode: TLabel
-          Left = 100
+          Left = 105
           Height = 15
           Top = 11
           Width = 66
@@ -100,7 +100,7 @@ object frmMain: TfrmMain
           ParentColor = False
         end
         object lblResolution: TLabel
-          Left = 285
+          Left = 289
           Height = 15
           Top = 11
           Width = 56
@@ -108,7 +108,7 @@ object frmMain: TfrmMain
           ParentColor = False
         end
         object lblAudioValue: TLabel
-          Left = 443
+          Left = 446
           Height = 15
           Top = 11
           Width = 69
@@ -116,7 +116,7 @@ object frmMain: TfrmMain
           ParentColor = False
         end
         object cboMode: TComboBox
-          Left = 100
+          Left = 105
           Height = 23
           Top = 27
           Width = 100
@@ -132,7 +132,7 @@ object frmMain: TfrmMain
           Text = 'Target Quality'
         end
         object txtVideoValue: TEdit
-          Left = 207
+          Left = 212
           Height = 23
           Hint = 'Video encoder is x264 '#13#10'x264 outputs awesome h264 videos'#13#10#13#10'Value Infos:'#13#10'Target Quality - choose from 20 - 40'#13#10'Target Bitrate - in kilobytes per second (kbps)'#13#10#13#10'Good Value Examples:'#13#10'Target Quality = 26 (for x264) 30 (for x265)'#13#10'Target Bitrate = 380 (for x264) 280 (for x265)'
           Top = 27
@@ -145,7 +145,7 @@ object frmMain: TfrmMain
           TabOrder = 2
         end
         object txtResolution: TEdit
-          Left = 362
+          Left = 367
           Height = 23
           Hint = 'Height recommended starting value is 360'#13#10'Width recommended starting value is 640'
           Top = 27
@@ -157,7 +157,7 @@ object frmMain: TfrmMain
           TabOrder = 4
         end
         object txtAudioValue: TEdit
-          Left = 441
+          Left = 446
           Height = 23
           Hint = 'Audio encoder is HE-AAC (fdk_haac; Fraunhofer FDK AAC) '#13#10#13#10'Audio Bitrate Info:'#13#10'the bitrate range is from 32 - 99'#13#10#13#10'Audio Bitrate Good Example:'#13#10'Audio Bitrate = 40'
           Top = 27
@@ -169,7 +169,7 @@ object frmMain: TfrmMain
           TabOrder = 5
         end
         object chkHardSubs: TCheckBox
-          Left = 512
+          Left = 517
           Height = 19
           Hint = 'if Hard Subs is uncheck it will do Soft Subs given that'#13#10'the input source video has Soft Subs that is'#13#10#13#10'if Hard Subs is checked it will output to mp4 '#13#10'you may wonder what if the source file has no subs at all '#13#10'so will checking "Hard Subs" still output to mp4? '#13#10'the answer is yes'#13#10#13#10'if Hard Subs is unchecked it will output to mkv'#13#10'and will add all the soft subs to mkv'
           Top = 27
@@ -180,7 +180,7 @@ object frmMain: TfrmMain
           TabOrder = 6
         end
         object tglResolution: TToggleBox
-          Left = 284
+          Left = 289
           Height = 23
           Top = 27
           Width = 70
@@ -189,7 +189,7 @@ object frmMain: TfrmMain
           TabOrder = 3
         end
         object lblEncoder: TLabel
-          Left = 9
+          Left = 13
           Height = 15
           Top = 11
           Width = 43
@@ -197,7 +197,7 @@ object frmMain: TfrmMain
           ParentColor = False
         end
         object cboEncoder: TComboBox
-          Left = 8
+          Left = 13
           Height = 23
           Top = 27
           Width = 80
@@ -416,12 +416,12 @@ object frmMain: TfrmMain
       ClientHeight = 307
       ClientWidth = 616
       object Label3: TLabel
-        Left = 23
+        Left = 24
         Height = 184
         Top = 18
         Width = 565
         AutoSize = False
-        Caption = 'Program Name: Cyko (made by j0x)'#13#10'Last Update: 01-28-16'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandbrakeCLI visit Handbrake website at handbrake.fr'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
+        Caption = 'Program Name: Cyko (made by j0x)'#13#10'Last Update: 01-29-16'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandbrakeCLI visit Handbrake website at handbrake.fr'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
         ParentColor = False
         WordWrap = True
       end
