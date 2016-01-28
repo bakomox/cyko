@@ -123,7 +123,7 @@ LazarusResources.Add('TfrmMain','FORMDATA',[
   +'ght'#2#19#3'Top'#3#234#0#5'Width'#3#192#0#7'Caption'#6#27'Shutdown When Don'
   +'e Encoding'#8'TabOrder'#2#6#0#0#0#9'TTabSheet'#8'tbsAbout'#7'Caption'#6#5'A'
   +'bout'#12'ClientHeight'#3'3'#1#11'ClientWidth'#3'h'#2#0#6'TLabel'#6'Label3'#4
-  +'Left'#2#24#6'Height'#3#184#0#3'Top'#2#18#5'Width'#3'5'#2#8'AutoSize'#8#7'Ca'
+  +'Left'#2#23#6'Height'#3#184#0#3'Top'#2#18#5'Width'#3'5'#2#8'AutoSize'#8#7'Ca'
   +'ption'#6#255'Program Name: Cyko (made by j0x)'#13#10'Last Update: 01-29-16'
   +#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'
   +#13#10'Powered by: HandbrakeCLI visit Handbrake website at handbrake.fr'#13

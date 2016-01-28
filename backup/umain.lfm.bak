@@ -416,7 +416,7 @@ object frmMain: TfrmMain
       ClientHeight = 307
       ClientWidth = 616
       object Label3: TLabel
-        Left = 24
+        Left = 23
         Height = 184
         Top = 18
         Width = 565

@@ -648,7 +648,7 @@ end;
 
 procedure TfrmMain.cboEncoderChange(Sender: TObject);
 begin
-  if cboEncoder.ItemIndex = 0 then // x264
+  if cboEncoder.ItemIndex = 0 then //x264 encoder
   begin
      cboPresets.Items.Clear;
      cboPresets.Items.Add('Ultra Fast');
@@ -680,7 +680,7 @@ begin
      cboProfiles.Items.Add('High');
      cboProfiles.ItemIndex := 2;
   end
-  else if cboEncoder.ItemIndex = 1 then //x265
+  else if cboEncoder.ItemIndex = 1 then //x265 encoder
   begin
      cboPresets.Items.Clear;
      cboPresets.Items.Add('Ultra Fast');
