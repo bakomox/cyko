@@ -1,4 +1,7 @@
-download the latest HandbrakeCLI (select the Win_CLI) from here -> http://handbrake.fr/nightly.php 
+cyko is a batch video encoder for mini-size anime encoding powered by Handbrake
+inspired by BENCOS, Real Anime 6 and Minicoder this program encodes Fansub anime to small sizes
+
+download the latest HandbrakeCLI (select the one with the words Win and CLI) from here -> http://handbrake.fr/nightly.php 
 
 extract the .zip archive on thesame location as cyko for example cyko is located at "c:\cyko\"
 then put "HandbrakeCLI" inside "c:\cyko\" and then inside "c:\cyko\" youll see cyko.exe and HandbrakeCLI.exe 
