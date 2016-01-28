@@ -1,0 +1,147 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrmMain','FORMDATA',[
+  'TPF0'#8'TfrmMain'#7'frmMain'#4'Left'#3'f'#1#6'Height'#3'm'#1#3'Top'#3#201#0#5
+  +'Width'#3#138#2#13'ActiveControl'#7#7'pgcMain'#14'AllowDropFiles'#9#11'Borde'
+  +'rIcons'#11#12'biSystemMenu'#10'biMinimize'#0#11'BorderStyle'#7#8'bsSingle'#7
+  +'Caption'#6#4'Cyko'#12'ClientHeight'#3'm'#1#11'ClientWidth'#3#138#2#12'OnClo'
+  +'seQuery'#7#14'FormCloseQuery'#8'OnCreate'#7#10'FormCreate'#9'OnDestroy'#7#11
+  +'FormDestroy'#11'OnDropFiles'#7#13'FormDropFiles'#8'Position'#7#15'poDesktop'
+  +'Center'#10'LCLVersion'#6#7'1.4.4.0'#7'Visible'#9#0#12'TPageControl'#7'pgcMa'
+  +'in'#4'Left'#2#16#6'Height'#3'O'#1#3'Top'#2#16#5'Width'#3'p'#2#10'ActivePage'
+  +#7#8'tbsInput'#8'TabIndex'#2#0#8'TabOrder'#2#0#11'OnMouseDown'#7#16'pgcMainM'
+  +'ouseDown'#0#9'TTabSheet'#8'tbsInput'#7'Caption'#6#6'Inputs'#12'ClientHeight'
+  +#3'3'#1#11'ClientWidth'#3'h'#2#0#6'TLabel'#6'Label6'#4'Left'#2#4#6'Height'#2
+  +#15#3'Top'#2#5#5'Width'#3#240#1#7'Caption'#6'cdrag and drop video files to t'
+  +'he list (white area) also right click the white area for more options'#11'P'
+  +'arentColor'#8#0#0#8'TListBox'#6'lstAdd'#4'Left'#2#4#6'Height'#3#240#0#4'Hin'
+  +'t'#6'Tdrag and drop video files here '#13#10#13#10'right click this area or'
+  +' an item for more options'#3'Top'#2#26#5'Width'#3'['#2#8'DragMode'#7#11'dmA'
+  +'utomatic'#10'ItemHeight'#2#0#14'ParentShowHint'#8#9'PopupMenu'#7#10'PopupMe'
+  +'nu1'#8'ShowHint'#9#8'TabOrder'#2#0#0#0#7'TButton'#6'btnAdd'#4'Left'#3#232#1
+  +#6'Height'#2#24#3'Top'#3#18#1#5'Width'#2'w'#7'Caption'#6#16'Add Source Files'
+  +#7'OnClick'#7#11'btnAddClick'#8'TabOrder'#2#1#0#0#5'TEdit'#9'txtOutput'#4'Le'
+  +'ft'#3#132#0#6'Height'#2#23#3'Top'#3#20#1#5'Width'#3'W'#1#8'ReadOnly'#9#8'Ta'
+  +'bOrder'#2#3#0#0#7'TButton'#9'btnOutput'#4'Left'#2#4#6'Height'#2#24#3'Top'#3
+  +#18#1#5'Width'#2'w'#7'Caption'#6#15'Output Location'#7'OnClick'#7#14'btnOutp'
+  +'utClick'#8'TabOrder'#2#2#0#0#0#9'TTabSheet'#10'tbsOptions'#7'Caption'#6#7'O'
+  +'ptions'#12'ClientHeight'#3'3'#1#11'ClientWidth'#3'h'#2#0#9'TGroupBox'#11'gr'
+  +'pSettings'#4'Left'#2#5#6'Height'#2'M'#3'Top'#2#5#5'Width'#3'X'#2#7'Caption'
+  +#6#6'Basics'#12'ClientHeight'#2'9'#11'ClientWidth'#3'T'#2#8'TabOrder'#2#1#0#6
+  +'TLabel'#7'lblMode'#4'Left'#2'd'#6'Height'#2#15#3'Top'#2#11#5'Width'#2'B'#7
+  +'Caption'#6#12'Rate Control'#11'ParentColor'#8#0#0#6'TLabel'#13'lblResolutio'
+  +'n'#4'Left'#3#29#1#6'Height'#2#15#3'Top'#2#11#5'Width'#2'8'#7'Caption'#6#10
+  +'Resolution'#11'ParentColor'#8#0#0#6'TLabel'#13'lblAudioValue'#4'Left'#3#187
+  +#1#6'Height'#2#15#3'Top'#2#11#5'Width'#2'E'#7'Caption'#6#13'Audio Bitrate'#11
+  +'ParentColor'#8#0#0#9'TComboBox'#7'cboMode'#4'Left'#2'd'#6'Height'#2#23#3'To'
+  +'p'#2#27#5'Width'#2'd'#10'ItemHeight'#2#15#9'ItemIndex'#2#0#13'Items.Strings'
+  +#1#6#14'Target Quality'#6#14'Target Bitrate'#0#8'OnChange'#7#13'cboModeChang'
+  +'e'#5'Style'#7#14'csDropDownList'#8'TabOrder'#2#1#4'Text'#6#14'Target Qualit'
+  +'y'#0#0#5'TEdit'#13'txtVideoValue'#4'Left'#3#207#0#6'Height'#2#23#4'Hint'#12
+  +#21#1#0#0'Video encoder is x264 '#13#10'x264 outputs awesome h264 videos'#13
+  +#10#13#10'Value Infos:'#13#10'Target Quality - choose from 20 - 40'#13#10'Ta'
+  +'rget Bitrate - in kilobytes per second (kbps)'#13#10#13#10'Good Value Examp'
+  +'les:'#13#10'Target Quality = 26 (for x264) 30 (for x265)'#13#10'Target Bitr'
+  +'ate = 380 (for x264) 280 (for x265)'#3'Top'#2#27#5'Width'#2'A'#9'MaxLength'
+  +#2#3#8'OnChange'#7#19'txtVideoValueChange'#10'OnKeyPress'#7#21'txtVideoValue'
+  +'KeyPress'#14'ParentShowHint'#8#8'ShowHint'#9#8'TabOrder'#2#2#0#0#5'TEdit'#13
+  +'txtResolution'#4'Left'#3'j'#1#6'Height'#2#23#4'Hint'#6'QHeight recommended '
+  +'starting value is 360'#13#10'Width recommended starting value is 640'#3'Top'
+  +#2#27#5'Width'#2'F'#9'MaxLength'#2#4#10'OnKeyPress'#7#21'txtResolutionKeyPre'
+  +'ss'#14'ParentShowHint'#8#8'ShowHint'#9#8'TabOrder'#2#4#0#0#5'TEdit'#13'txtA'
+  +'udioValue'#4'Left'#3#185#1#6'Height'#2#23#4'Hint'#6#164'Audio encoder is HE'
+  +'-AAC (fdk_haac; Fraunhofer FDK AAC) '#13#10#13#10'Audio Bitrate Info:'#13#10
+  +'the bitrate range is from 32 - 99'#13#10#13#10'Audio Bitrate Good Example:'
+  +#13#10'Audio Bitrate = 40'#3'Top'#2#27#5'Width'#2'A'#9'MaxLength'#2#2#10'OnK'
+  +'eyPress'#7#21'txtAudioValueKeyPress'#14'ParentShowHint'#8#8'ShowHint'#9#8'T'
+  +'abOrder'#2#5#0#0#9'TCheckBox'#11'chkHardSubs'#4'Left'#3#0#2#6'Height'#2#19#4
+  +'Hint'#12't'#1#0#0'if Hard Subs is uncheck it will do Soft Subs given that'
+  +#13#10'the input source video has Soft Subs that is'#13#10#13#10'if Hard Sub'
+  +'s is checked it will output to mp4 '#13#10'you may wonder what if the sourc'
+  +'e file has no subs at all '#13#10'so will checking "Hard Subs" still output'
+  +' to mp4? '#13#10'the answer is yes'#13#10#13#10'if Hard Subs is unchecked i'
+  +'t will output to mkv'#13#10'and will add all the soft subs to mkv'#3'Top'#2
+  +#27#5'Width'#2'J'#7'Caption'#6#9'Hard Subs'#14'ParentShowHint'#8#8'ShowHint'
+  +#9#8'TabOrder'#2#6#0#0#10'TToggleBox'#13'tglResolution'#4'Left'#3#28#1#6'Hei'
+  +'ght'#2#23#3'Top'#2#27#5'Width'#2'F'#7'Caption'#6#6'Height'#8'OnChange'#7#19
+  +'tglResolutionChange'#8'TabOrder'#2#3#0#0#6'TLabel'#10'lblEncoder'#4'Left'#2
+  ,#9#6'Height'#2#15#3'Top'#2#11#5'Width'#2'+'#7'Caption'#6#7'Encoder'#11'Paren'
+  +'tColor'#8#0#0#9'TComboBox'#10'cboEncoder'#4'Left'#2#8#6'Height'#2#23#3'Top'
+  +#2#27#5'Width'#2'P'#10'ItemHeight'#2#15#9'ItemIndex'#2#0#13'Items.Strings'#1
+  +#6#4'x264'#6#4'x265'#0#8'OnChange'#7#16'cboEncoderChange'#5'Style'#7#14'csDr'
+  +'opDownList'#8'TabOrder'#2#0#4'Text'#6#4'x264'#0#0#0#7'TButton'#10'btnEnqueu'
+  +'e'#4'Left'#2#4#6'Height'#2'0'#4'Hint'#12#31#1#0#0'NOTE: sometimes the scann'
+  +'ing is stuck on a "FileName"'#13#10'when this happen wait atleast for 3 min'
+  +'utes (or more) then '#13#10'take note of the file and close the program the'
+  +'n either you '#13#10're-mux it with mkvmergeGUI or change your input video '
+  +#13#10'file as it seems you got a corrupted video input file'#3'Top'#3#248#0
+  +#5'Width'#3'X'#2#7'Caption'#6#25'Put Parameters To Outputs'#7'OnClick'#7#15
+  +'btnEnqueueClick'#14'ParentShowHint'#8#8'ShowHint'#9#8'TabOrder'#2#3#0#0#12
+  +'TProgressBar'#7'prgScan'#4'Left'#2#5#6'Height'#2#27#3'Top'#3#184#0#5'Width'
+  +#3'X'#2#3'Max'#2'x'#4'Step'#2'('#8'TabOrder'#2#0#0#0#5'TEdit'#13'txtScanStat'
+  +'us'#4'Left'#2#5#6'Height'#2#23#4'Hint'#6#16'Scanning Status '#3'Top'#3#216#0
+  +#5'Width'#3'X'#2#14'ParentShowHint'#8#8'ReadOnly'#9#8'ShowHint'#9#8'TabOrder'
+  +#2#2#0#0#9'TGroupBox'#10'grpPresets'#4'Left'#2#5#6'Height'#2'7'#3'Top'#2'_'#5
+  +'Width'#3#170#0#7'Caption'#6#7'Presets'#12'ClientHeight'#2'#'#11'ClientWidth'
+  +#3#166#0#8'TabOrder'#2#4#0#9'TComboBox'#10'cboPresets'#4'Left'#2#9#6'Height'
+  +#2#23#3'Top'#2#8#5'Width'#3#140#0#10'ItemHeight'#2#15#9'ItemIndex'#2#8#13'It'
+  +'ems.Strings'#1#6#10'Ultra Fast'#6#10'Super Fast'#6#9'Very Fast'#6#6'Faster'
+  +#6#4'Fast'#6#6'Medium'#6#4'Slow'#6#6'Slower'#6#9'Very Slow'#6#7'Placebo'#0#5
+  +'Style'#7#14'csDropDownList'#8'TabOrder'#2#0#4'Text'#6#9'Very Slow'#0#0#0#9
+  +'TGroupBox'#8'grpTunes'#4'Left'#3#220#0#6'Height'#2'7'#3'Top'#2'_'#5'Width'#3
+  +#170#0#7'Caption'#6#5'Tunes'#12'ClientHeight'#2'#'#11'ClientWidth'#3#166#0#8
+  +'TabOrder'#2#5#0#9'TComboBox'#8'cboTunes'#4'Left'#2#6#6'Height'#2#23#3'Top'#2
+  +#8#5'Width'#3#140#0#10'ItemHeight'#2#15#9'ItemIndex'#2#1#13'Items.Strings'#1
+  +#6#4'Film'#6#9'Animation'#6#5'Grain'#6#11'Still Image'#6#4'PSNR'#6#4'SSIM'#6
+  +#11'Fast Decode'#6#12'Zero Latency'#0#5'Style'#7#14'csDropDownList'#8'TabOrd'
+  +'er'#2#0#4'Text'#6#9'Animation'#0#0#0#9'TGroupBox'#11'grpProfiles'#4'Left'#3
+  +#179#1#6'Height'#2'7'#3'Top'#2'_'#5'Width'#3#170#0#7'Caption'#6#8'Profiles'
+  +#12'ClientHeight'#2'#'#11'ClientWidth'#3#166#0#8'TabOrder'#2#6#0#9'TComboBox'
+  +#11'cboProfiles'#4'Left'#2#13#6'Height'#2#23#3'Top'#2#8#5'Width'#3#140#0#10
+  +'ItemHeight'#2#15#9'ItemIndex'#2#2#13'Items.Strings'#1#6#8'Baseline'#6#4'Mai'
+  +'n'#6#4'High'#0#5'Style'#7#14'csDropDownList'#8'TabOrder'#2#0#4'Text'#6#4'Hi'
+  +'gh'#0#0#0#0#9'TTabSheet'#9'tbsOutput'#7'Caption'#6#7'Outputs'#12'ClientHeig'
+  +'ht'#3'3'#1#11'ClientWidth'#3'h'#2#0#8'TListBox'#6'lstOut'#4'Left'#2#7#6'Hei'
+  +'ght'#3#208#0#4'Hint'#6'1right click this area or an item for more options'#3
+  +'Top'#2#10#5'Width'#3'P'#2#10'ItemHeight'#2#0#7'OnClick'#7#11'lstOutClick'#14
+  +'ParentShowHint'#8#9'PopupMenu'#7#10'PopupMenu2'#8'ShowHint'#9#8'TabOrder'#2
+  +#0#0#0#5'TEdit'#6'txtOut'#4'Left'#3#204#0#6'Height'#2#23#4'Hint'#6#182'when '
+  +'you select an item on the output list this box is filled up with the whole '
+  +'command'#13#10'and the whole command line is copied to the clipboard for yo'
+  +'u to paste on notepad for example'#3'Top'#3#234#0#5'Width'#3#200#0#14'Paren'
+  +'tShowHint'#8#8'ReadOnly'#9#8'ShowHint'#9#8'TabOrder'#2#1#0#0#7'TButton'#9'b'
+  +'tnEncode'#4'Left'#3#235#1#6'Height'#2#28#3'Top'#3#10#1#5'Width'#2'l'#7'Capt'
+  +'ion'#6#6'Encode'#7'OnClick'#7#14'btnEncodeClick'#8'TabOrder'#2#2#0#0#12'TPr'
+  +'ogressBar'#9'prgEncode'#4'Left'#2'|'#6'Height'#2#27#3'Top'#3#10#1#5'Width'#3
+  +'f'#1#8'TabOrder'#2#3#0#0#9'TCheckBox'#14'chkShowConsole'#4'Left'#3#161#1#6
+  +'Height'#2#19#4'Hint'#6'$it shows the HandbrakeCLI activities'#3'Top'#3#234#0
+  +#5'Width'#3#182#0#7'Caption'#6#26'Show Console When Encoding'#7'Checked'#9#14
+  +'ParentShowHint'#8#8'ShowHint'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#4#0#0
+  +#7'TButton'#8'btnAbort'#4'Left'#2#7#6'Height'#2#28#3'Top'#3#10#1#5'Width'#2
+  +'l'#7'Caption'#6#14'Abort Encoding'#7'OnClick'#7#13'btnAbortClick'#8'TabOrde'
+  +'r'#2#5#0#0#9'TCheckBox'#11'chkShutdown'#4'Left'#2#7#6'Height'#2#19#3'Top'#3
+  +#234#0#5'Width'#3#192#0#7'Caption'#6#27'Shutdown When Done Encoding'#8'TabOr'
+  +'der'#2#6#0#0#0#9'TTabSheet'#8'tbsAbout'#7'Caption'#6#5'About'#12'ClientHeig'
+  +'ht'#3'3'#1#11'ClientWidth'#3'h'#2#0#6'TLabel'#6'Label3'#4'Left'#2#23#6'Heig'
+  +'ht'#3#184#0#3'Top'#2#18#5'Width'#3'5'#2#8'AutoSize'#8#7'Caption'#6#255'Prog'
+  +'ram Name: Cyko (made by j0x)'#13#10'Last Update: 01-28-16'#13#10'Programmin'
+  +'g Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered '
+  +'by: HandbrakeCLI visit Handbrake website at handbrake.fr'#13#10#13#10'This '
+  +'program is mainly for small size re-encoding of Fansub anime'#11'ParentColo'
+  +'r'#8#8'WordWrap'#9#0#0#0#0#10'TPopupMenu'#10'PopupMenu1'#4'left'#3#24#2#3't'
+  ,'op'#2#8#0#9'TMenuItem'#11'mnuFullPath'#7'Caption'#6#13'See Full Path'#7'OnC'
+  +'lick'#7#16'mnuFullPathClick'#0#0#9'TMenuItem'#16'mnuClearSelected'#7'Captio'
+  +'n'#6#14'Clear Selected'#7'OnClick'#7#21'mnuClearSelectedClick'#0#0#9'TMenuI'
+  +'tem'#8'mnuClear'#7'Caption'#6#5'Clear'#7'OnClick'#7#13'mnuClearClick'#0#0#0
+  +#11'TOpenDialog'#11'OpenDialog1'#7'Options'#11#18'ofAllowMultiSelect'#14'ofE'
+  +'nableSizing'#12'ofViewDetail'#0#4'left'#3#240#1#3'top'#2#8#0#0#10'TPopupMen'
+  +'u'#10'PopupMenu2'#4'left'#3';'#2#3'top'#2#8#0#9'TMenuItem'#11'mnu2FullCmd'#7
+  +'Caption'#6#20'See Full CommandLine'#7'OnClick'#7#16'mnu2FullCmdClick'#0#0#9
+  +'TMenuItem'#17'mnu2ClearSelected'#7'Caption'#6#14'Clear Selected'#7'OnClick'
+  +#7#22'mnu2ClearSelectedClick'#0#0#9'TMenuItem'#9'mnu2Clear'#7'Caption'#6#5'C'
+  +'lear'#7'OnClick'#7#14'mnu2ClearClick'#0#0#0#6'TTimer'#9'tmrEncode'#7'Enable'
+  +'d'#8#8'Interval'#3#200#0#7'OnTimer'#7#14'tmrEncodeTimer'#4'left'#3']'#2#3't'
+  +'op'#2#9#0#0#6'TTimer'#7'tmrScan'#7'Enabled'#8#8'Interval'#2'2'#7'OnTimer'#7
+  +#12'tmrScanTimer'#4'left'#3#207#1#3'top'#2#8#0#0#22'TSelectDirectoryDialog'
+  +#22'SelectDirectoryDialog1'#4'left'#3#176#1#3'top'#2#9#0#0#0
+]);

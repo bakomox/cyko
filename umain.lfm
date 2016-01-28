@@ -1,0 +1,485 @@
+object frmMain: TfrmMain
+  Left = 358
+  Height = 365
+  Top = 201
+  Width = 650
+  ActiveControl = pgcMain
+  AllowDropFiles = True
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Cyko'
+  ClientHeight = 365
+  ClientWidth = 650
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnDropFiles = FormDropFiles
+  Position = poDesktopCenter
+  LCLVersion = '1.4.4.0'
+  Visible = True
+  object pgcMain: TPageControl
+    Left = 16
+    Height = 335
+    Top = 16
+    Width = 624
+    ActivePage = tbsInput
+    TabIndex = 0
+    TabOrder = 0
+    OnMouseDown = pgcMainMouseDown
+    object tbsInput: TTabSheet
+      Caption = 'Inputs'
+      ClientHeight = 307
+      ClientWidth = 616
+      object Label6: TLabel
+        Left = 4
+        Height = 15
+        Top = 5
+        Width = 496
+        Caption = 'drag and drop video files to the list (white area) also right click the white area for more options'
+        ParentColor = False
+      end
+      object lstAdd: TListBox
+        Left = 4
+        Height = 240
+        Hint = 'drag and drop video files here '#13#10#13#10'right click this area or an item for more options'
+        Top = 26
+        Width = 603
+        DragMode = dmAutomatic
+        ItemHeight = 0
+        ParentShowHint = False
+        PopupMenu = PopupMenu1
+        ShowHint = True
+        TabOrder = 0
+      end
+      object btnAdd: TButton
+        Left = 488
+        Height = 24
+        Top = 274
+        Width = 119
+        Caption = 'Add Source Files'
+        OnClick = btnAddClick
+        TabOrder = 1
+      end
+      object txtOutput: TEdit
+        Left = 132
+        Height = 23
+        Top = 276
+        Width = 343
+        ReadOnly = True
+        TabOrder = 3
+      end
+      object btnOutput: TButton
+        Left = 4
+        Height = 24
+        Top = 274
+        Width = 119
+        Caption = 'Output Location'
+        OnClick = btnOutputClick
+        TabOrder = 2
+      end
+    end
+    object tbsOptions: TTabSheet
+      Caption = 'Options'
+      ClientHeight = 307
+      ClientWidth = 616
+      object grpSettings: TGroupBox
+        Left = 5
+        Height = 77
+        Top = 5
+        Width = 600
+        Caption = 'Basics'
+        ClientHeight = 57
+        ClientWidth = 596
+        TabOrder = 1
+        object lblMode: TLabel
+          Left = 100
+          Height = 15
+          Top = 11
+          Width = 66
+          Caption = 'Rate Control'
+          ParentColor = False
+        end
+        object lblResolution: TLabel
+          Left = 285
+          Height = 15
+          Top = 11
+          Width = 56
+          Caption = 'Resolution'
+          ParentColor = False
+        end
+        object lblAudioValue: TLabel
+          Left = 443
+          Height = 15
+          Top = 11
+          Width = 69
+          Caption = 'Audio Bitrate'
+          ParentColor = False
+        end
+        object cboMode: TComboBox
+          Left = 100
+          Height = 23
+          Top = 27
+          Width = 100
+          ItemHeight = 15
+          ItemIndex = 0
+          Items.Strings = (
+            'Target Quality'
+            'Target Bitrate'
+          )
+          OnChange = cboModeChange
+          Style = csDropDownList
+          TabOrder = 1
+          Text = 'Target Quality'
+        end
+        object txtVideoValue: TEdit
+          Left = 207
+          Height = 23
+          Hint = 'Video encoder is x264 '#13#10'x264 outputs awesome h264 videos'#13#10#13#10'Value Infos:'#13#10'Target Quality - choose from 20 - 40'#13#10'Target Bitrate - in kilobytes per second (kbps)'#13#10#13#10'Good Value Examples:'#13#10'Target Quality = 26 (for x264) 30 (for x265)'#13#10'Target Bitrate = 380 (for x264) 280 (for x265)'
+          Top = 27
+          Width = 65
+          MaxLength = 3
+          OnChange = txtVideoValueChange
+          OnKeyPress = txtVideoValueKeyPress
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 2
+        end
+        object txtResolution: TEdit
+          Left = 362
+          Height = 23
+          Hint = 'Height recommended starting value is 360'#13#10'Width recommended starting value is 640'
+          Top = 27
+          Width = 70
+          MaxLength = 4
+          OnKeyPress = txtResolutionKeyPress
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 4
+        end
+        object txtAudioValue: TEdit
+          Left = 441
+          Height = 23
+          Hint = 'Audio encoder is HE-AAC (fdk_haac; Fraunhofer FDK AAC) '#13#10#13#10'Audio Bitrate Info:'#13#10'the bitrate range is from 32 - 99'#13#10#13#10'Audio Bitrate Good Example:'#13#10'Audio Bitrate = 40'
+          Top = 27
+          Width = 65
+          MaxLength = 2
+          OnKeyPress = txtAudioValueKeyPress
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 5
+        end
+        object chkHardSubs: TCheckBox
+          Left = 512
+          Height = 19
+          Hint = 'if Hard Subs is uncheck it will do Soft Subs given that'#13#10'the input source video has Soft Subs that is'#13#10#13#10'if Hard Subs is checked it will output to mp4 '#13#10'you may wonder what if the source file has no subs at all '#13#10'so will checking "Hard Subs" still output to mp4? '#13#10'the answer is yes'#13#10#13#10'if Hard Subs is unchecked it will output to mkv'#13#10'and will add all the soft subs to mkv'
+          Top = 27
+          Width = 74
+          Caption = 'Hard Subs'
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 6
+        end
+        object tglResolution: TToggleBox
+          Left = 284
+          Height = 23
+          Top = 27
+          Width = 70
+          Caption = 'Height'
+          OnChange = tglResolutionChange
+          TabOrder = 3
+        end
+        object lblEncoder: TLabel
+          Left = 9
+          Height = 15
+          Top = 11
+          Width = 43
+          Caption = 'Encoder'
+          ParentColor = False
+        end
+        object cboEncoder: TComboBox
+          Left = 8
+          Height = 23
+          Top = 27
+          Width = 80
+          ItemHeight = 15
+          ItemIndex = 0
+          Items.Strings = (
+            'x264'
+            'x265'
+          )
+          OnChange = cboEncoderChange
+          Style = csDropDownList
+          TabOrder = 0
+          Text = 'x264'
+        end
+      end
+      object btnEnqueue: TButton
+        Left = 4
+        Height = 48
+        Hint = 'NOTE: sometimes the scanning is stuck on a "FileName"'#13#10'when this happen wait atleast for 3 minutes (or more) then '#13#10'take note of the file and close the program then either you '#13#10're-mux it with mkvmergeGUI or change your input video '#13#10'file as it seems you got a corrupted video input file'
+        Top = 248
+        Width = 600
+        Caption = 'Put Parameters To Outputs'
+        OnClick = btnEnqueueClick
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 3
+      end
+      object prgScan: TProgressBar
+        Left = 5
+        Height = 27
+        Top = 184
+        Width = 600
+        Max = 120
+        Step = 40
+        TabOrder = 0
+      end
+      object txtScanStatus: TEdit
+        Left = 5
+        Height = 23
+        Hint = 'Scanning Status '
+        Top = 216
+        Width = 600
+        ParentShowHint = False
+        ReadOnly = True
+        ShowHint = True
+        TabOrder = 2
+      end
+      object grpPresets: TGroupBox
+        Left = 5
+        Height = 55
+        Top = 95
+        Width = 170
+        Caption = 'Presets'
+        ClientHeight = 35
+        ClientWidth = 166
+        TabOrder = 4
+        object cboPresets: TComboBox
+          Left = 9
+          Height = 23
+          Top = 8
+          Width = 140
+          ItemHeight = 15
+          ItemIndex = 8
+          Items.Strings = (
+            'Ultra Fast'
+            'Super Fast'
+            'Very Fast'
+            'Faster'
+            'Fast'
+            'Medium'
+            'Slow'
+            'Slower'
+            'Very Slow'
+            'Placebo'
+          )
+          Style = csDropDownList
+          TabOrder = 0
+          Text = 'Very Slow'
+        end
+      end
+      object grpTunes: TGroupBox
+        Left = 220
+        Height = 55
+        Top = 95
+        Width = 170
+        Caption = 'Tunes'
+        ClientHeight = 35
+        ClientWidth = 166
+        TabOrder = 5
+        object cboTunes: TComboBox
+          Left = 6
+          Height = 23
+          Top = 8
+          Width = 140
+          ItemHeight = 15
+          ItemIndex = 1
+          Items.Strings = (
+            'Film'
+            'Animation'
+            'Grain'
+            'Still Image'
+            'PSNR'
+            'SSIM'
+            'Fast Decode'
+            'Zero Latency'
+          )
+          Style = csDropDownList
+          TabOrder = 0
+          Text = 'Animation'
+        end
+      end
+      object grpProfiles: TGroupBox
+        Left = 435
+        Height = 55
+        Top = 95
+        Width = 170
+        Caption = 'Profiles'
+        ClientHeight = 35
+        ClientWidth = 166
+        TabOrder = 6
+        object cboProfiles: TComboBox
+          Left = 13
+          Height = 23
+          Top = 8
+          Width = 140
+          ItemHeight = 15
+          ItemIndex = 2
+          Items.Strings = (
+            'Baseline'
+            'Main'
+            'High'
+          )
+          Style = csDropDownList
+          TabOrder = 0
+          Text = 'High'
+        end
+      end
+    end
+    object tbsOutput: TTabSheet
+      Caption = 'Outputs'
+      ClientHeight = 307
+      ClientWidth = 616
+      object lstOut: TListBox
+        Left = 7
+        Height = 208
+        Hint = 'right click this area or an item for more options'
+        Top = 10
+        Width = 592
+        ItemHeight = 0
+        OnClick = lstOutClick
+        ParentShowHint = False
+        PopupMenu = PopupMenu2
+        ShowHint = True
+        TabOrder = 0
+      end
+      object txtOut: TEdit
+        Left = 204
+        Height = 23
+        Hint = 'when you select an item on the output list this box is filled up with the whole command'#13#10'and the whole command line is copied to the clipboard for you to paste on notepad for example'
+        Top = 234
+        Width = 200
+        ParentShowHint = False
+        ReadOnly = True
+        ShowHint = True
+        TabOrder = 1
+      end
+      object btnEncode: TButton
+        Left = 491
+        Height = 28
+        Top = 266
+        Width = 108
+        Caption = 'Encode'
+        OnClick = btnEncodeClick
+        TabOrder = 2
+      end
+      object prgEncode: TProgressBar
+        Left = 124
+        Height = 27
+        Top = 266
+        Width = 358
+        TabOrder = 3
+      end
+      object chkShowConsole: TCheckBox
+        Left = 417
+        Height = 19
+        Hint = 'it shows the HandbrakeCLI activities'
+        Top = 234
+        Width = 182
+        Caption = 'Show Console When Encoding'
+        Checked = True
+        ParentShowHint = False
+        ShowHint = True
+        State = cbChecked
+        TabOrder = 4
+      end
+      object btnAbort: TButton
+        Left = 7
+        Height = 28
+        Top = 266
+        Width = 108
+        Caption = 'Abort Encoding'
+        OnClick = btnAbortClick
+        TabOrder = 5
+      end
+      object chkShutdown: TCheckBox
+        Left = 7
+        Height = 19
+        Top = 234
+        Width = 192
+        Caption = 'Shutdown When Done Encoding'
+        TabOrder = 6
+      end
+    end
+    object tbsAbout: TTabSheet
+      Caption = 'About'
+      ClientHeight = 307
+      ClientWidth = 616
+      object Label3: TLabel
+        Left = 23
+        Height = 184
+        Top = 18
+        Width = 565
+        AutoSize = False
+        Caption = 'Program Name: Cyko (made by j0x)'#13#10'Last Update: 01-28-16'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandbrakeCLI visit Handbrake website at handbrake.fr'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
+        ParentColor = False
+        WordWrap = True
+      end
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    left = 536
+    top = 8
+    object mnuFullPath: TMenuItem
+      Caption = 'See Full Path'
+      OnClick = mnuFullPathClick
+    end
+    object mnuClearSelected: TMenuItem
+      Caption = 'Clear Selected'
+      OnClick = mnuClearSelectedClick
+    end
+    object mnuClear: TMenuItem
+      Caption = 'Clear'
+      OnClick = mnuClearClick
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
+    left = 496
+    top = 8
+  end
+  object PopupMenu2: TPopupMenu
+    left = 571
+    top = 8
+    object mnu2FullCmd: TMenuItem
+      Caption = 'See Full CommandLine'
+      OnClick = mnu2FullCmdClick
+    end
+    object mnu2ClearSelected: TMenuItem
+      Caption = 'Clear Selected'
+      OnClick = mnu2ClearSelectedClick
+    end
+    object mnu2Clear: TMenuItem
+      Caption = 'Clear'
+      OnClick = mnu2ClearClick
+    end
+  end
+  object tmrEncode: TTimer
+    Enabled = False
+    Interval = 200
+    OnTimer = tmrEncodeTimer
+    left = 605
+    top = 9
+  end
+  object tmrScan: TTimer
+    Enabled = False
+    Interval = 50
+    OnTimer = tmrScanTimer
+    left = 463
+    top = 8
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    left = 432
+    top = 9
+  end
+end
