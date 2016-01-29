@@ -14,3 +14,4 @@ with the updated HandbrakeCLI.exe on thesame location as cyko.exe
 
 and ye you can place the whole folder containing cyko.exe and HandBrakeCLI.exe wherever you want afterwards
 and you can even carry it on your USB Flash Drive if you want to encode on a different PC
+
