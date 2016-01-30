@@ -39,7 +39,7 @@ LazarusResources.Add('TfrmMain','FORMDATA',[
   +'e'#5'Style'#7#14'csDropDownList'#8'TabOrder'#2#1#4'Text'#6#14'Target Qualit'
   +'y'#0#0#5'TEdit'#13'txtVideoValue'#4'Left'#3#212#0#6'Height'#2#23#4'Hint'#12
   +#21#1#0#0'Video encoder is x264 '#13#10'x264 outputs awesome h264 videos'#13
-  +#10#13#10'Value Infos:'#13#10'Target Quality - choose from 20 - 40'#13#10'Ta'
+  +#10#13#10'Value Infos:'#13#10'Target Quality - choose from 20 - 50'#13#10'Ta'
   +'rget Bitrate - in kilobytes per second (kbps)'#13#10#13#10'Good Value Examp'
   +'les:'#13#10'Target Quality = 26 (for x264) 30 (for x265)'#13#10'Target Bitr'
   +'ate = 380 (for x264) 280 (for x265)'#3'Top'#2#27#5'Width'#2'A'#9'MaxLength'
@@ -124,7 +124,7 @@ LazarusResources.Add('TfrmMain','FORMDATA',[
   +'e Encoding'#8'TabOrder'#2#6#0#0#0#9'TTabSheet'#8'tbsAbout'#7'Caption'#6#5'A'
   +'bout'#12'ClientHeight'#3'3'#1#11'ClientWidth'#3'h'#2#0#6'TLabel'#6'Label3'#4
   +'Left'#2#23#6'Height'#3#184#0#3'Top'#2#18#5'Width'#3'5'#2#8'AutoSize'#8#7'Ca'
-  +'ption'#6#215'Program Name: Cyko (made by j0x)'#13#10'Last Update: 01-29-16'
+  +'ption'#6#215'Program Name: Cyko (made by j0x)'#13#10'Last Update: 01-30-16'
   +#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'
   +#13#10'Powered by: HandBrakeCLI'#13#10#13#10'This program is mainly for smal'
   +'l size re-encoding of Fansub anime'#11'ParentColor'#8#8'WordWrap'#9#0#0#0#0
