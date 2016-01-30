@@ -1,7 +1,10 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-*.txt eol=crlf
+# correct the newline or line breaks on WindowsOS
+*.txt 			eol=crlf
+*.gitattributes 	eol=crlf
+*.gitignore 		eol=crlf
 
 # Custom for Visual Studio
 *.cs     diff=csharp
