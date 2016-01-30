@@ -412,7 +412,7 @@ begin
   try
     if ((StrToInt(txtVideoValue.Text) < 20) or (StrToInt(txtVideoValue.Text) > 50)) and (cboMode.Text = 'Target Quality') then
     begin
-      ShowMessage('Target Quality value must be >= 20 and <= 50');
+      ShowMessage('Target Quality value must be >= 20 or <= 50');
       txtVideoValue.Text := '';
       txtVideoValue.SetFocus;
     end;
