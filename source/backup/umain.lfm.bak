@@ -421,7 +421,7 @@ object frmMain: TfrmMain
         Top = 18
         Width = 565
         AutoSize = False
-        Caption = 'Program Name: Cyko (made by j0x)'#13#10'Last Update: 01-29-16'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandBrakeCLI'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
+        Caption = 'Program Name: Cyko (made by j0x)'#13#10'Last Update: 01-30-16'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandBrakeCLI'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
         ParentColor = False
         WordWrap = True
       end
