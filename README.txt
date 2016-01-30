@@ -6,7 +6,7 @@ latest releases -> https://github.com/ckmox/cyko/releases
 download the latest HandBrakeCLI (select the one with the words Win and CLI) from here -> http://handbrake.fr/nightly.php 
 
 extract the .zip archive on thesame location as cyko for example cyko is located at "c:\cyko\"
-then put HandBrakeCLI inside "c:\cyko\" and then inside "c:\cyko\" youll see cyko.exe and HandBrakeCLI.exe 
+then put HandBrakeCLI inside "c:\cyko\" and then inside "c:\cyko\" you will see cyko.exe and HandBrakeCLI.exe 
 then thats it run cyko and use it
 
 updating HandBrakeCLI is thesame thing only difference is you have to overwrite the HandbrakeCLI.exe
