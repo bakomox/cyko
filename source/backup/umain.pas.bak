@@ -100,7 +100,6 @@ type
     i: integer;
     ii: integer;
     encoded: boolean;
-    venString: string;
     EncoderString: string;
     resolutionString: string;
   end;
@@ -327,7 +326,7 @@ begin
       trim(frmMain.txtOutput.Text) + '\' +
       stringReplace(ExtractFilename(frmMain.lstAdd.Items[frmMain.ii]),
       ExtractFileExt(frmMain.lstAdd.Items[frmMain.ii]), '-OUT.mp4', [rfReplaceAll, rfIgnoreCase]) +
-      '" ' + frmMain.venString + trim(frmMain.txtVideoValue.Text) + frmMain.EncoderString + ' -m -E fdk_haac --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
+      '" ' + frmMain.EncoderString + ' -m -E fdk_haac --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
       frmMain.resolutionString + ' -s 1 --subtitle-burned' + ' --all-audio');
   end
   else if frmMain.chkHardSubs.Checked = False then
@@ -337,7 +336,7 @@ begin
       trim(frmMain.txtOutput.Text) + '\' +
       stringReplace(ExtractFilename(frmMain.lstAdd.Items[frmMain.ii]),
       ExtractFileExt(frmMain.lstAdd.Items[frmMain.ii]), '-OUT.mkv', [rfReplaceAll, rfIgnoreCase]) +
-      '" ' + frmMain.venString + trim(frmMain.txtVideoValue.Text) + frmMain.EncoderString + ' -m -E fdk_haac --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
+      '" ' + frmMain.EncoderString + ' -m -E fdk_haac --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
       frmMain.resolutionString + ' --all-subtitles --subtitle-default' + ' --all-audio');
   end;
 
@@ -391,28 +390,29 @@ procedure TfrmMain.btnEnqueueClick(Sender: TObject);
 begin
   if (cboEncoder.ItemIndex = 0) then
   begin
-    EncoderString := ' -e x264';
+    EncoderString := '-e x264';
   end
 
   else if (cboEncoder.ItemIndex = 1) then
   begin
-    EncoderString := ' -e x265';
-  end;
-
-  if (cboMode.ItemIndex = 0) and (txtVideoValue.Text <> '') then
-  begin
-    venString := '-q ';
-  end
-
-  else if (cboMode.ItemIndex = 1) and (txtVideoValue.Text <> '') then
-  begin
-    venString := '-2 -T -b ';
+    EncoderString := '-e x265';
   end;
 
   try
     if ((StrToInt(txtVideoValue.Text) < 20) or (StrToInt(txtVideoValue.Text) > 50)) and (cboMode.Text = 'Target Quality') then
     begin
-      ShowMessage('Target Quality value must be >= 20 and <= 50');
+      ShowMessage('Target Quality value must be >= 20 or <= 50');
+      txtVideoValue.Text := '';
+      txtVideoValue.SetFocus;
+    end;
+  except
+    Exit;
+  end;
+
+  try
+    if (StrToInt(txtVideoValue.Text) < 100) and (cboMode.Text = 'Target Bitrate') then
+    begin
+      ShowMessage('Target Bitrate value must be >= 100');
       txtVideoValue.Text := '';
       txtVideoValue.SetFocus;
     end;
@@ -442,6 +442,14 @@ begin
 
   if cboEncoder.ItemIndex = 0 then //x264 presets, tunes, profiles
   begin
+       if (cboMode.ItemIndex = 0) and (txtVideoValue.Text <> '') then
+       begin
+            EncoderString := EncoderString + ' ' + '-q ' + Trim(txtVideoValue.Text);
+       end
+       else if (cboMode.ItemIndex = 1) and (txtVideoValue.Text <> '') then
+       begin
+            EncoderString := EncoderString + ' ' + '-2 -T -b ' + Trim(txtVideoValue.Text);
+       end;
 
        if cboPresets.ItemIndex = 0 then
        begin
@@ -533,6 +541,14 @@ begin
   end
   else if cboEncoder.ItemIndex = 1 then //x265 presets, tunes, profiles
   begin
+       if (cboMode.ItemIndex = 0) and (txtVideoValue.Text <> '') then
+       begin
+            EncoderString := EncoderString + ' ' + '-q ' + Trim(txtVideoValue.Text);
+       end
+       else if (cboMode.ItemIndex = 1) and (txtVideoValue.Text <> '') then
+       begin
+            EncoderString := EncoderString + ' ' + '-2 -b ' + Trim(txtVideoValue.Text);
+       end;
 
        if cboPresets.ItemIndex = 0 then
        begin
