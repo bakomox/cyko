@@ -326,7 +326,7 @@ begin
       trim(frmMain.txtOutput.Text) + '\' +
       stringReplace(ExtractFilename(frmMain.lstAdd.Items[frmMain.ii]),
       ExtractFileExt(frmMain.lstAdd.Items[frmMain.ii]), '-OUT.mp4', [rfReplaceAll, rfIgnoreCase]) +
-      '" ' + frmMain.EncoderString + ' -m -E fdk_haac --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
+      '" ' + frmMain.EncoderString + ' -m -E av_aac --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
       frmMain.resolutionString + ' -s 1 --subtitle-burned' + ' --all-audio');
   end
   else if frmMain.chkHardSubs.Checked = False then
@@ -336,7 +336,7 @@ begin
       trim(frmMain.txtOutput.Text) + '\' +
       stringReplace(ExtractFilename(frmMain.lstAdd.Items[frmMain.ii]),
       ExtractFileExt(frmMain.lstAdd.Items[frmMain.ii]), '-OUT.mkv', [rfReplaceAll, rfIgnoreCase]) +
-      '" ' + frmMain.EncoderString + ' -m -E fdk_haac --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
+      '" ' + frmMain.EncoderString + ' -m -E vorbis --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
       frmMain.resolutionString + ' --all-subtitles --subtitle-default' + ' --all-audio');
   end;
 
@@ -421,9 +421,9 @@ begin
   end;
 
   try
-    if (StrToInt(txtAudioValue.Text) < 32) then
+    if (StrToInt(txtAudioValue.Text) < 64) then
     begin
-      ShowMessage('Audio bitrate must not be less than 32');
+      ShowMessage('Audio bitrate must not be less than 64');
       txtAudioValue.Text := '';
       txtAudioValue.SetFocus;
     end;
@@ -547,7 +547,7 @@ begin
        end
        else if (cboMode.ItemIndex = 1) and (txtVideoValue.Text <> '') then
        begin
-            EncoderString := EncoderString + ' ' + '-2 -b ' + Trim(txtVideoValue.Text);
+            EncoderString := EncoderString + ' ' + '-2 -T -b ' + Trim(txtVideoValue.Text);
        end;
 
        if cboPresets.ItemIndex = 0 then
