@@ -159,7 +159,7 @@ object frmMain: TfrmMain
         object txtAudioValue: TEdit
           Left = 446
           Height = 23
-          Hint = 'Audio encoder is AAC-LC'#13#10#13#10'Audio Bitrate Range:'#13#10'the bitrate range is from 64 - 99'#13#10#13#10'Audio Bitrate Good Example:'#13#10'Audio Bitrate = 64'
+          Hint = 'Audio encoder is LC-AAC'#13#10#13#10'Audio Bitrate Range:'#13#10'the bitrate range is from 64 - 99'#13#10#13#10'Audio Bitrate Good Example:'#13#10'Audio Bitrate = 64'
           Top = 27
           Width = 65
           MaxLength = 2
