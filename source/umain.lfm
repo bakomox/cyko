@@ -159,7 +159,7 @@ object frmMain: TfrmMain
         object txtAudioValue: TEdit
           Left = 446
           Height = 23
-          Hint = 'Audio encoders are Vorbis for MKV and AAC for MP4'#13#10#13#10'Audio Bitrate Range:'#13#10'the bitrate range is from 64 - 99'#13#10#13#10'Audio Bitrate Good Example:'#13#10'Audio Bitrate = 64'
+          Hint = 'Audio encoder is LC-AAC'#13#10#13#10'Audio Bitrate Range:'#13#10'the bitrate range is from 64 - 99'#13#10#13#10'Audio Bitrate Good Example:'#13#10'Audio Bitrate = 64'
           Top = 27
           Width = 65
           MaxLength = 2
@@ -421,7 +421,7 @@ object frmMain: TfrmMain
         Top = 18
         Width = 565
         AutoSize = False
-        Caption = 'Program Name: Cyko (made by j0x)'#13#10'Last Update: 02-14-16'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandBrakeCLI'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
+        Caption = 'Program Name: Cyko (made by j0x)'#13#10'Last Update: 02-15-16'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandBrakeCLI'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
         ParentColor = False
         WordWrap = True
       end

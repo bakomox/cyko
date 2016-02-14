@@ -336,7 +336,7 @@ begin
       trim(frmMain.txtOutput.Text) + '\' +
       stringReplace(ExtractFilename(frmMain.lstAdd.Items[frmMain.ii]),
       ExtractFileExt(frmMain.lstAdd.Items[frmMain.ii]), '-OUT.mkv', [rfReplaceAll, rfIgnoreCase]) +
-      '" ' + frmMain.EncoderString + ' -m -E vorbis --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
+      '" ' + frmMain.EncoderString + ' -m -E av_aac --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
       frmMain.resolutionString + ' --all-subtitles --subtitle-default' + ' --all-audio');
   end;
 
