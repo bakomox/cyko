@@ -15,7 +15,7 @@ object frmMain: TfrmMain
   OnDestroy = FormDestroy
   OnDropFiles = FormDropFiles
   Position = poDesktopCenter
-  LCLVersion = '1.4.4.0'
+  LCLVersion = '1.6.0.4'
   Visible = True
   object pgcMain: TPageControl
     Left = 16
@@ -171,7 +171,7 @@ object frmMain: TfrmMain
         object chkHardSubs: TCheckBox
           Left = 517
           Height = 19
-          Hint = 'if Hard Subs is uncheck it will do Soft Subs given that'#13#10'the input source video has Soft Subs that is'#13#10#13#10'if Hard Subs is checked it will output to mp4 '#13#10'you may wonder what if the source file has no subs at all '#13#10'so will checking "Hard Subs" still output to mp4? '#13#10'the answer is yes'#13#10#13#10'if Hard Subs is unchecked it will output to mkv'#13#10'and will add all the soft subs to mkv'
+          Hint = 'if Hard Subs is uncheck it will do Soft Subs given that'#13#10'the input source video has Soft Subs that is'#13#10#13#10'if Hard Subs is checked it will output to MP4 '#13#10'you may wonder what if the source file has no subs at all '#13#10'so will checking "Hard Subs" still output to MP4? '#13#10'the answer is yes'#13#10#13#10'if Hard Subs is unchecked it will output to MKV'#13#10'and will add all the soft subs to MKV'
           Top = 27
           Width = 74
           Caption = 'Hard Subs'
@@ -421,7 +421,7 @@ object frmMain: TfrmMain
         Top = 18
         Width = 565
         AutoSize = False
-        Caption = 'Program Name: Cyko (made by j0x)'#13#10'Last Update: 02-15-16'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandBrakeCLI'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
+        Caption = 'Program Name: Cyko (made by j0x)'#13#10'Last Update: 02-19-16'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandBrakeCLI'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
         ParentColor = False
         WordWrap = True
       end
