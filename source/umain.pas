@@ -327,7 +327,7 @@ begin
       stringReplace(ExtractFilename(frmMain.lstAdd.Items[frmMain.ii]),
       ExtractFileExt(frmMain.lstAdd.Items[frmMain.ii]), '-OUT.mp4', [rfReplaceAll, rfIgnoreCase]) +
       '" ' + frmMain.EncoderString + ' -m -E av_aac --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
-      frmMain.resolutionString + ' -s 1 --subtitle-burned' + ' --all-audio');
+      frmMain.resolutionString + ' --non-anamorphic --keep-display-aspect -s 1 --subtitle-burned' + ' --all-audio');
   end
   else if frmMain.chkHardSubs.Checked = False then
   begin
@@ -337,7 +337,7 @@ begin
       stringReplace(ExtractFilename(frmMain.lstAdd.Items[frmMain.ii]),
       ExtractFileExt(frmMain.lstAdd.Items[frmMain.ii]), '-OUT.mkv', [rfReplaceAll, rfIgnoreCase]) +
       '" ' + frmMain.EncoderString + ' -m -E vorbis --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
-      frmMain.resolutionString + ' --all-subtitles --subtitle-default' + ' --all-audio');
+      frmMain.resolutionString + ' --non-anamorphic --keep-display-aspect --all-subtitles --subtitle-default' + ' --all-audio');
   end;
 
   frmMain.ii := frmMain.ii + 1;
