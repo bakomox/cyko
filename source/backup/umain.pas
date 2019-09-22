@@ -337,7 +337,7 @@ begin
       stringReplace(ExtractFilename(frmMain.lstAdd.Items[frmMain.ii]),
       ExtractFileExt(frmMain.lstAdd.Items[frmMain.ii]), '-OUT.mkv', [rfReplaceAll, rfIgnoreCase]) +
       '" ' + frmMain.EncoderString + ' -m -E opus --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
-      frmMain.resolutionString + ' --non-anamorphic --keep-display-aspect --subtitle-lang-list all --all-subtitles --subtitle-default' + ' --all-audio');
+      frmMain.resolutionString + ' --non-anamorphic --keep-display-aspect --subtitle-lang-list all --all-subtitles --subtitle-default 1' + ' --all-audio');
   end;
 
   frmMain.ii := frmMain.ii + 1;
