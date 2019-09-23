@@ -159,7 +159,7 @@ object frmMain: TfrmMain
         object txtAudioValue: TEdit
           Left = 446
           Height = 23
-          Hint = 'Audio encoders are Vorbis (for MKV) and LC-AAC (for MP4)'#13#10#13#10'Audio Bitrate Range:'#13#10'the bitrate range is from 48 - 99'#13#10#13#10'Audio Bitrate Good Example:'#13#10'Audio Bitrate = 48'
+          Hint = 'Audio encoders are Opus (for MKV) and LC-AAC (for MP4)'#13#10#13#10'Audio Bitrate Range:'#13#10'the bitrate range is from 40 - 99'#13#10#13#10'Audio Bitrate Good Example:'#13#10'Audio Bitrate = 64'
           Top = 27
           Width = 65
           MaxLength = 2
@@ -260,7 +260,7 @@ object frmMain: TfrmMain
           Top = 8
           Width = 140
           ItemHeight = 15
-          ItemIndex = 7
+          ItemIndex = 6
           Items.Strings = (
             'Ultra Fast'
             'Super Fast'
@@ -275,7 +275,7 @@ object frmMain: TfrmMain
           )
           Style = csDropDownList
           TabOrder = 0
-          Text = 'Slower'
+          Text = 'Slow'
         end
       end
       object grpTunes: TGroupBox
@@ -420,7 +420,7 @@ object frmMain: TfrmMain
         Top = 18
         Width = 565
         AutoSize = False
-        Caption = 'Program Name: Cyko (made by ckmox)'#13#10'Last Update: 22-09-19'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandBrakeCLI'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
+        Caption = 'Program Name: Cyko (made by ckmox)'#13#10'Last Update: 23-09-19'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandBrakeCLI'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
         ParentColor = False
         WordWrap = True
       end

@@ -421,9 +421,9 @@ begin
   end;
 
   try
-    if (StrToInt(txtAudioValue.Text) < 48) then
+    if (StrToInt(txtAudioValue.Text) < 40) then
     begin
-      ShowMessage('Audio bitrate must not be less than 48');
+      ShowMessage('Audio bitrate must not be less than 40');
       txtAudioValue.Text := '';
       txtAudioValue.SetFocus;
     end;
@@ -677,7 +677,7 @@ begin
      cboPresets.Items.Add('Slower');
      cboPresets.Items.Add('Very Slow');
      cboPresets.Items.Add('Placebo');
-     cboPresets.ItemIndex := 7;
+     cboPresets.ItemIndex := 6;
 
      cboTunes.Items.Clear;
      cboTunes.Items.Add('Film');
