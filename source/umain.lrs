@@ -124,7 +124,7 @@ LazarusResources.Add('TfrmMain','FORMDATA',[
   +'TabOrder'#2#6#0#0#0#9'TTabSheet'#8'tbsAbout'#7'Caption'#6#5'About'#12'Clien'
   +'tHeight'#3'3'#1#11'ClientWidth'#3'h'#2#0#6'TLabel'#6'Label3'#4'Left'#2#23#6
   +'Height'#3#184#0#3'Top'#2#18#5'Width'#3'5'#2#8'AutoSize'#8#7'Caption'#6#217
-  +'Program Name: Cyko (made by ckmox)'#13#10'Last Update: 23-09-19'#13#10'Prog'
+  +'Program Name: Cyko (made by ckmox)'#13#10'Last Update: 04-10-19'#13#10'Prog'
   +'ramming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Po'
   +'wered by: HandBrakeCLI'#13#10#13#10'This program is mainly for small size r'
   +'e-encoding of Fansub anime'#11'ParentColor'#8#8'WordWrap'#9#0#0#0#0#10'TPop'

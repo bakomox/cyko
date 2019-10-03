@@ -433,11 +433,11 @@ begin
 
   if tglResolution.Checked = False then
   begin
-    resolutionString := ' -l ' + trim(txtResolution.Text);
+    resolutionString := ' -Y ' + trim(txtResolution.Text);
   end
   else if tglResolution.Checked = True then
   begin
-    resolutionString := ' -w ' + trim(txtResolution.Text);
+    resolutionString := ' -X ' + trim(txtResolution.Text);
   end;
 
   if cboEncoder.ItemIndex = 0 then //x264 presets, tunes, profiles
