@@ -15,7 +15,7 @@ object frmMain: TfrmMain
   OnDestroy = FormDestroy
   OnDropFiles = FormDropFiles
   Position = poDesktopCenter
-  LCLVersion = '2.0.4.0'
+  LCLVersion = '2.2.4.0'
   Visible = True
   object pgcMain: TPageControl
     Left = 16
@@ -419,15 +419,15 @@ object frmMain: TfrmMain
         Top = 18
         Width = 565
         AutoSize = False
-        Caption = 'Program Name: Cyko (made by ckmox)'#13#10'Last Update: 14-10-19'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandBrakeCLI'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
+        Caption = 'Program Name: Cyko (made by ckmox)'#13#10'Last Update: 30-12-22'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandBrakeCLI'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
         ParentColor = False
         WordWrap = True
       end
     end
   end
   object PopupMenu1: TPopupMenu
-    left = 536
-    top = 8
+    Left = 536
+    Top = 8
     object mnuFullPath: TMenuItem
       Caption = 'See Full Path'
       OnClick = mnuFullPathClick
@@ -443,12 +443,12 @@ object frmMain: TfrmMain
   end
   object OpenDialog1: TOpenDialog
     Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
-    left = 496
-    top = 8
+    Left = 496
+    Top = 8
   end
   object PopupMenu2: TPopupMenu
-    left = 571
-    top = 8
+    Left = 571
+    Top = 8
     object mnu2FullCmd: TMenuItem
       Caption = 'See Full CommandLine'
       OnClick = mnu2FullCmdClick
@@ -466,18 +466,18 @@ object frmMain: TfrmMain
     Enabled = False
     Interval = 200
     OnTimer = tmrEncodeTimer
-    left = 605
-    top = 9
+    Left = 605
+    Top = 9
   end
   object tmrScan: TTimer
     Enabled = False
     Interval = 50
     OnTimer = tmrScanTimer
-    left = 463
-    top = 8
+    Left = 463
+    Top = 8
   end
   object SelectDirectoryDialog1: TSelectDirectoryDialog
-    left = 432
-    top = 9
+    Left = 432
+    Top = 9
   end
 end

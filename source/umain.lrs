@@ -7,7 +7,7 @@ LazarusResources.Add('TfrmMain','FORMDATA',[
   +'Caption'#6#4'Cyko'#12'ClientHeight'#3'm'#1#11'ClientWidth'#3#138#2#12'OnClo'
   +'seQuery'#7#14'FormCloseQuery'#8'OnCreate'#7#10'FormCreate'#9'OnDestroy'#7#11
   +'FormDestroy'#11'OnDropFiles'#7#13'FormDropFiles'#8'Position'#7#15'poDesktop'
-  +'Center'#10'LCLVersion'#6#7'2.0.4.0'#7'Visible'#9#0#12'TPageControl'#7'pgcMa'
+  +'Center'#10'LCLVersion'#6#7'2.2.4.0'#7'Visible'#9#0#12'TPageControl'#7'pgcMa'
   +'in'#4'Left'#2#16#6'Height'#3'O'#1#3'Top'#2#16#5'Width'#3'p'#2#10'ActivePage'
   +#7#8'tbsInput'#8'TabIndex'#2#0#8'TabOrder'#2#0#11'OnMouseDown'#7#16'pgcMainM'
   +'ouseDown'#0#9'TTabSheet'#8'tbsInput'#7'Caption'#6#6'Inputs'#12'ClientHeight'
@@ -124,24 +124,24 @@ LazarusResources.Add('TfrmMain','FORMDATA',[
   +'TabOrder'#2#6#0#0#0#9'TTabSheet'#8'tbsAbout'#7'Caption'#6#5'About'#12'Clien'
   +'tHeight'#3'3'#1#11'ClientWidth'#3'h'#2#0#6'TLabel'#6'Label3'#4'Left'#2#23#6
   +'Height'#3#184#0#3'Top'#2#18#5'Width'#3'5'#2#8'AutoSize'#8#7'Caption'#6#217
-  +'Program Name: Cyko (made by ckmox)'#13#10'Last Update: 14-10-19'#13#10'Prog'
+  +'Program Name: Cyko (made by ckmox)'#13#10'Last Update: 30-12-22'#13#10'Prog'
   +'ramming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Po'
   +'wered by: HandBrakeCLI'#13#10#13#10'This program is mainly for small size r'
   +'e-encoding of Fansub anime'#11'ParentColor'#8#8'WordWrap'#9#0#0#0#0#10'TPop'
-  +'upMenu'#10'PopupMenu1'#4'left'#3#24#2#3'top'#2#8#0#9'TMenuItem'#11'mnuFullP'
+  +'upMenu'#10'PopupMenu1'#4'Left'#3#24#2#3'Top'#2#8#0#9'TMenuItem'#11'mnuFullP'
   ,'ath'#7'Caption'#6#13'See Full Path'#7'OnClick'#7#16'mnuFullPathClick'#0#0#9
   +'TMenuItem'#16'mnuClearSelected'#7'Caption'#6#14'Clear Selected'#7'OnClick'#7
   +#21'mnuClearSelectedClick'#0#0#9'TMenuItem'#8'mnuClear'#7'Caption'#6#5'Clear'
   +#7'OnClick'#7#13'mnuClearClick'#0#0#0#11'TOpenDialog'#11'OpenDialog1'#7'Opti'
-  +'ons'#11#18'ofAllowMultiSelect'#14'ofEnableSizing'#12'ofViewDetail'#0#4'left'
-  +#3#240#1#3'top'#2#8#0#0#10'TPopupMenu'#10'PopupMenu2'#4'left'#3';'#2#3'top'#2
+  +'ons'#11#18'ofAllowMultiSelect'#14'ofEnableSizing'#12'ofViewDetail'#0#4'Left'
+  +#3#240#1#3'Top'#2#8#0#0#10'TPopupMenu'#10'PopupMenu2'#4'Left'#3';'#2#3'Top'#2
   +#8#0#9'TMenuItem'#11'mnu2FullCmd'#7'Caption'#6#20'See Full CommandLine'#7'On'
   +'Click'#7#16'mnu2FullCmdClick'#0#0#9'TMenuItem'#17'mnu2ClearSelected'#7'Capt'
   +'ion'#6#14'Clear Selected'#7'OnClick'#7#22'mnu2ClearSelectedClick'#0#0#9'TMe'
   +'nuItem'#9'mnu2Clear'#7'Caption'#6#5'Clear'#7'OnClick'#7#14'mnu2ClearClick'#0
   +#0#0#6'TTimer'#9'tmrEncode'#7'Enabled'#8#8'Interval'#3#200#0#7'OnTimer'#7#14
-  +'tmrEncodeTimer'#4'left'#3']'#2#3'top'#2#9#0#0#6'TTimer'#7'tmrScan'#7'Enable'
-  +'d'#8#8'Interval'#2'2'#7'OnTimer'#7#12'tmrScanTimer'#4'left'#3#207#1#3'top'#2
-  +#8#0#0#22'TSelectDirectoryDialog'#22'SelectDirectoryDialog1'#4'left'#3#176#1
-  +#3'top'#2#9#0#0#0
+  +'tmrEncodeTimer'#4'Left'#3']'#2#3'Top'#2#9#0#0#6'TTimer'#7'tmrScan'#7'Enable'
+  +'d'#8#8'Interval'#2'2'#7'OnTimer'#7#12'tmrScanTimer'#4'Left'#3#207#1#3'Top'#2
+  +#8#0#0#22'TSelectDirectoryDialog'#22'SelectDirectoryDialog1'#4'Left'#3#176#1
+  +#3'Top'#2#9#0#0#0
 ]);

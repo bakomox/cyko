@@ -15,7 +15,7 @@ object frmMain: TfrmMain
   OnDestroy = FormDestroy
   OnDropFiles = FormDropFiles
   Position = poDesktopCenter
-  LCLVersion = '2.0.4.0'
+  LCLVersion = '2.2.4.0'
   Visible = True
   object pgcMain: TPageControl
     Left = 16
@@ -260,7 +260,7 @@ object frmMain: TfrmMain
           Top = 8
           Width = 140
           ItemHeight = 15
-          ItemIndex = 6
+          ItemIndex = 5
           Items.Strings = (
             'Ultra Fast'
             'Super Fast'
@@ -275,7 +275,7 @@ object frmMain: TfrmMain
           )
           Style = csDropDownList
           TabOrder = 0
-          Text = 'Slow'
+          Text = 'Medium'
         end
       end
       object grpTunes: TGroupBox
@@ -293,16 +293,14 @@ object frmMain: TfrmMain
           Top = 8
           Width = 140
           ItemHeight = 15
-          ItemIndex = 1
+          ItemIndex = 5
           Items.Strings = (
-            'Film'
-            'Animation'
-            'Grain'
-            'Still Image'
             'PSNR'
             'SSIM'
-            'Fast Decode'
+            'Grain'
             'Zero Latency'
+            'Fast Decode'
+            'Animation'
           )
           Style = csDropDownList
           TabOrder = 0
@@ -327,7 +325,8 @@ object frmMain: TfrmMain
           ItemIndex = 0
           Items.Strings = (
             'Auto'
-            'High'
+            'Main'
+            'Main Still Picture'
           )
           Style = csDropDownList
           TabOrder = 0
@@ -427,8 +426,8 @@ object frmMain: TfrmMain
     end
   end
   object PopupMenu1: TPopupMenu
-    left = 536
-    top = 8
+    Left = 536
+    Top = 8
     object mnuFullPath: TMenuItem
       Caption = 'See Full Path'
       OnClick = mnuFullPathClick
@@ -444,12 +443,12 @@ object frmMain: TfrmMain
   end
   object OpenDialog1: TOpenDialog
     Options = [ofAllowMultiSelect, ofEnableSizing, ofViewDetail]
-    left = 496
-    top = 8
+    Left = 496
+    Top = 8
   end
   object PopupMenu2: TPopupMenu
-    left = 571
-    top = 8
+    Left = 571
+    Top = 8
     object mnu2FullCmd: TMenuItem
       Caption = 'See Full CommandLine'
       OnClick = mnu2FullCmdClick
@@ -467,18 +466,18 @@ object frmMain: TfrmMain
     Enabled = False
     Interval = 200
     OnTimer = tmrEncodeTimer
-    left = 605
-    top = 9
+    Left = 605
+    Top = 9
   end
   object tmrScan: TTimer
     Enabled = False
     Interval = 50
     OnTimer = tmrScanTimer
-    left = 463
-    top = 8
+    Left = 463
+    Top = 8
   end
   object SelectDirectoryDialog1: TSelectDirectoryDialog
-    left = 432
-    top = 9
+    Left = 432
+    Top = 9
   end
 end

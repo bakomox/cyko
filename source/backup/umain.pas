@@ -326,7 +326,7 @@ begin
       trim(frmMain.txtOutput.Text) + '\' +
       stringReplace(ExtractFilename(frmMain.lstAdd.Items[frmMain.ii]),
       ExtractFileExt(frmMain.lstAdd.Items[frmMain.ii]), '-OUT.mp4', [rfReplaceAll, rfIgnoreCase]) +
-      '" ' + frmMain.EncoderString + ' -m -E av_aac --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
+      '" ' + frmMain.EncoderString + ' -m -E opus --mixdown stereo -B ' + trim(frmMain.txtAudioValue.Text) +
       frmMain.resolutionString + ' --non-anamorphic --keep-display-aspect -s 1 --subtitle-burned' + ' --all-audio');
   end
   else if frmMain.chkHardSubs.Checked = False then
