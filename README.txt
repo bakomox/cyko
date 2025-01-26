@@ -1,5 +1,5 @@
-cyko is a batch video encoder for mini size anime encoding/transcoding powered by HandBrake
-inspired by BENCOS, Real Anime 6 and Minicoder this program encodes/transcodes Fansub anime to small sizes
+cyko is a batch video encoder for mini size anime encoding or transcoding powered by HandBrake
+inspired by BENCOS, Real Anime 6 and Minicoder this program encodes or transcodes fansub anime to small sizes
 
 latest releases -> https://github.com/ckmox/cyko/releases
 
