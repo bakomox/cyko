@@ -3,7 +3,6 @@ object frmMain: TfrmMain
   Height = 365
   Top = 201
   Width = 650
-  ActiveControl = pgcMain
   AllowDropFiles = True
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
@@ -15,15 +14,15 @@ object frmMain: TfrmMain
   OnDestroy = FormDestroy
   OnDropFiles = FormDropFiles
   Position = poDesktopCenter
-  LCLVersion = '2.2.4.0'
+  LCLVersion = '3.8.0.0'
   Visible = True
   object pgcMain: TPageControl
     Left = 16
     Height = 335
     Top = 16
     Width = 624
-    ActivePage = tbsInput
-    TabIndex = 0
+    ActivePage = tbsAbout
+    TabIndex = 3
     TabOrder = 0
     OnMouseDown = pgcMainMouseDown
     object tbsInput: TTabSheet
@@ -57,8 +56,8 @@ object frmMain: TfrmMain
         Top = 274
         Width = 119
         Caption = 'Add Source Files'
-        OnClick = btnAddClick
         TabOrder = 1
+        OnClick = btnAddClick
       end
       object txtOutput: TEdit
         Left = 132
@@ -74,8 +73,8 @@ object frmMain: TfrmMain
         Top = 274
         Width = 119
         Caption = 'Output Location'
-        OnClick = btnOutputClick
         TabOrder = 2
+        OnClick = btnOutputClick
       end
     end
     object tbsOptions: TTabSheet
@@ -126,10 +125,10 @@ object frmMain: TfrmMain
             'Target Quality'
             'Target Bitrate'
           )
-          OnChange = cboModeChange
           Style = csDropDownList
           TabOrder = 1
           Text = 'Target Quality'
+          OnChange = cboModeChange
         end
         object txtVideoValue: TEdit
           Left = 212
@@ -138,11 +137,11 @@ object frmMain: TfrmMain
           Top = 27
           Width = 65
           MaxLength = 3
-          OnChange = txtVideoValueChange
-          OnKeyPress = txtVideoValueKeyPress
           ParentShowHint = False
           ShowHint = True
           TabOrder = 2
+          OnChange = txtVideoValueChange
+          OnKeyPress = txtVideoValueKeyPress
         end
         object txtResolution: TEdit
           Left = 367
@@ -151,10 +150,10 @@ object frmMain: TfrmMain
           Top = 27
           Width = 70
           MaxLength = 4
-          OnKeyPress = txtResolutionKeyPress
           ParentShowHint = False
           ShowHint = True
           TabOrder = 4
+          OnKeyPress = txtResolutionKeyPress
         end
         object txtAudioValue: TEdit
           Left = 446
@@ -163,17 +162,17 @@ object frmMain: TfrmMain
           Top = 27
           Width = 65
           MaxLength = 2
-          OnKeyPress = txtAudioValueKeyPress
           ParentShowHint = False
           ShowHint = True
           TabOrder = 5
+          OnKeyPress = txtAudioValueKeyPress
         end
         object chkHardSubs: TCheckBox
           Left = 517
           Height = 19
           Hint = 'if Hard Subs is uncheck it will do Soft Subs given that'#13#10'the input source video has Soft Subs that is'#13#10#13#10'if Hard Subs is checked it will output to MP4 '#13#10'you may wonder what if the source file has no subs at all '#13#10'so will checking "Hard Subs" still output to MP4? '#13#10'the answer is yes'#13#10#13#10'if Hard Subs is unchecked it will output to MKV'#13#10'and will add all the soft subs to MKV'
           Top = 27
-          Width = 74
+          Width = 72
           Caption = 'Hard Subs'
           ParentShowHint = False
           ShowHint = True
@@ -185,8 +184,8 @@ object frmMain: TfrmMain
           Top = 27
           Width = 70
           Caption = 'Height'
-          OnChange = tglResolutionChange
           TabOrder = 3
+          OnChange = tglResolutionChange
         end
         object lblEncoder: TLabel
           Left = 13
@@ -207,10 +206,10 @@ object frmMain: TfrmMain
             'x264 10bit'
             'x265 10bit'
           )
-          OnChange = cboEncoderChange
           Style = csDropDownList
           TabOrder = 0
           Text = 'x265 10bit'
+          OnChange = cboEncoderChange
         end
       end
       object btnEnqueue: TButton
@@ -220,10 +219,10 @@ object frmMain: TfrmMain
         Top = 248
         Width = 600
         Caption = 'Put Parameters To Outputs'
-        OnClick = btnEnqueueClick
         ParentShowHint = False
         ShowHint = True
         TabOrder = 6
+        OnClick = btnEnqueueClick
       end
       object prgScan: TProgressBar
         Left = 5
@@ -345,11 +344,11 @@ object frmMain: TfrmMain
         Top = 10
         Width = 592
         ItemHeight = 0
-        OnClick = lstOutClick
         ParentShowHint = False
         PopupMenu = PopupMenu2
         ShowHint = True
         TabOrder = 0
+        OnClick = lstOutClick
       end
       object txtOut: TEdit
         Left = 204
@@ -368,8 +367,8 @@ object frmMain: TfrmMain
         Top = 266
         Width = 108
         Caption = 'Encode'
-        OnClick = btnEncodeClick
         TabOrder = 2
+        OnClick = btnEncodeClick
       end
       object prgEncode: TProgressBar
         Left = 124
@@ -383,7 +382,7 @@ object frmMain: TfrmMain
         Height = 19
         Hint = 'it shows the HandbrakeCLI activities'
         Top = 234
-        Width = 182
+        Width = 180
         Caption = 'Show Console When Encoding'
         Checked = True
         ParentShowHint = False
@@ -397,14 +396,14 @@ object frmMain: TfrmMain
         Top = 266
         Width = 108
         Caption = 'Abort Encoding'
-        OnClick = btnAbortClick
         TabOrder = 5
+        OnClick = btnAbortClick
       end
       object chkShutdown: TCheckBox
         Left = 7
         Height = 19
         Top = 234
-        Width = 192
+        Width = 190
         Caption = 'Shutdown When Done Encoding'
         TabOrder = 6
       end
@@ -419,7 +418,7 @@ object frmMain: TfrmMain
         Top = 18
         Width = 565
         AutoSize = False
-        Caption = 'Program Name: Cyko (made by ckmox)'#13#10'Last Update: 30-12-22'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandBrakeCLI'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
+        Caption = 'Program Name: Cyko (made by bakomox)'#13#10'Last Update: 01-27-25'#13#10'Programming Language: Lazarus IDE (Free Pascal)'#13#10'License: GPLv3'#13#10'Powered by: HandBrakeCLI'#13#10#13#10'This program is mainly for small size re-encoding of Fansub anime'
         ParentColor = False
         WordWrap = True
       end
