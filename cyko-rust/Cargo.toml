@@ -1,0 +1,10 @@
+[package]
+name = "cyko-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iced = { version = "0.12.1", features = ["tokio", "advanced"] }
+tokio = { version = "1.37.0", features = ["full"] }
+rfd = "0.14.1"
+raw-window-handle = "0.6.2"
