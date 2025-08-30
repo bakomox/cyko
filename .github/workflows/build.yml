@@ -1,0 +1,36 @@
+name: Build Rust Application
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    name: Build on Windows
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache dependencies and build outputs
+        uses: Swatinem/rust-cache@v2
+        with:
+          key: ${{ runner.os }}-rust-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Build the application
+        run: cargo build --verbose --release
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cyko-rust-windows
+          path: target/release/cyko-rust.exe
